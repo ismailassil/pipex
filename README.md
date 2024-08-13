@@ -18,7 +18,7 @@ A process logically is divided into segments:
 A process can create another process using the `fork()` system call.
 The process that calls `fork()` called the **Parent Process**, and the new process called the **Child Process**.
 
-![shape_lQRZC_4bRBmmZGC_we8hf at 24-03-08 18.42.45.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/b3dd6a31-aea8-4120-ad04-f590c5777170/c5f578b1-8854-4dfd-b3a5-9e3a6ffc4960/shape_lQRZC_4bRBmmZGC_we8hf_at_24-03-08_18.42.45.png)
+![fork](img/2.png)
 
 When the `fork()` system call is called the **Kernel** creates a duplicate of the process (**Parent Process**), the child process inherits copies of the parent’s data, stack and heap’s segments.
 
@@ -101,7 +101,7 @@ The **Wrapper function** then returns to the caller, providing an integer return
 
 ---
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/b3dd6a31-aea8-4120-ad04-f590c5777170/5c47a906-acf6-46d2-b16d-89f531c4d30e/Untitled.png)
+![Untitled](img/3.png)
 
 ### Memory layout of a process
 
@@ -123,7 +123,7 @@ Dynamically growing and shrinking segment containing stack frames. [ one stack f
 
 On most Linux and Unix implementation: The stack resides at high end of memory and grows downward *(toward the heap).* A special-purpose register, the stack pointer tracks the current top of the stack
 
-![shape_sbQ6SKgowjinN7RgDQNym at 24-03-09 03.02.18.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/b3dd6a31-aea8-4120-ad04-f590c5777170/c554d17e-6012-4e73-b588-a0017f590aa4/shape_sbQ6SKgowjinN7RgDQNym_at_24-03-09_03.02.18.png)
+![Kernel](img/4.png)
 
 **Heap**
 
