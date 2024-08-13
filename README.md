@@ -13,7 +13,7 @@ A process logically is divided into segments:
 **Heap:** Area from which the program dynamically allocates extra memory.
 **Stack:** A piece of memory that grows and shrinks as functions are called and return…
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/b3dd6a31-aea8-4120-ad04-f590c5777170/75edff35-9a78-4434-bc06-6cf7b9882f43/Untitled.png)
+![Memory Layout](img/1.png)
 
 A process can create another process using the `fork()` system call.
 The process that calls `fork()` called the **Parent Process**, and the new process called the **Child Process**.
